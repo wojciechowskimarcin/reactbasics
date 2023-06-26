@@ -1,0 +1,11 @@
+.headerStyle {
+    background-color:blueviolet;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.headerStyle > h2 {
+    margin:0
+}
