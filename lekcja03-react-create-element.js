@@ -24,12 +24,20 @@ const footerStyle = {
 
 //ReactDOM.render(elem, document.getElementById("root"));
 
+function myFunction(event) {
+    let text = event.currentTarget.tagName;
+    alert(text);
+  }
+
+
+const fn1 = (event) => console.log("Kliknąłeś mnie :)"+event.currentTarget.tagName); //sprawdź różnicę pomiędzy wpisem fn1 i fn1()
+
 const header = (
-                <header className="headerStyle">
+                <header className="headerStyle" onClick={fn1} name="header"> 
                 <h2>Witajcie na mojej stronie</h2>
                 </header>
                 );
-const main = <main style={mainStyle}><p>To jest treść strony</p></main>;
+const main = <main style={mainStyle} onClick={myFunction} name="main"><p>To jest treść strony</p></main>;
 const footer = <footer style={footerStyle}>&copy; Wszystkie prawa zastrzeżone</footer>;
 
 const page = [header, main, footer];
