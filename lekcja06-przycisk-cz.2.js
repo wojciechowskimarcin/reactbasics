@@ -30,8 +30,9 @@ class Application extends React.Component {
         // this.setState({
         //     text: this.state.text + letter
         // })
-        if (this.state.letter == 122){ // reset liter alfabetu
+        if (this.state.letter == 122){
             this.state.letter=65; 
+            this.state.text = "tekst:"
         }
         this.setState(()=>
            ( // Zwracanie całego obiektu
