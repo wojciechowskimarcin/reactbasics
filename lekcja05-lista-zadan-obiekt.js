@@ -4,8 +4,6 @@
 class TaskList extends React.Component{
     //tworzenie stanu - właściwości komponentu klasowego
     state = {
-        /*tasks : ["Poranny trening", "Praca", "Nauka Reacta", "Trening Karate"],
-        hour: ["8:00-10:00","8:00-10:00","8:00-10:00",]*/
         "tasks": {
             "Poranny trening": "8:00-10:00",
             "Praca": "10:00-12:00",
