@@ -16,30 +16,33 @@ class TaskList extends React.Component{
     
 
     render(){
-        let taskCss = {
-            "width" : "5em",
-            "paddingRight": "1em",
-            "float": "left"
-        }
-        let taskEl = {
-            "width": "30%",
-            "backgroundColor": "orange",
-            "borderBottom": "1px solid grey",
-            "marginBottom": "5px",
-            "color": "black",
-            "fontWeight": "bolder",
-            "padding": "5px"
-        }
-        let taskUl = {
-            "padding": "0"
-        }
+        // Zagnieżdżanie styli
+        let taskCSS = {
+            taskSpan : {
+                "width" : "5em",
+                "paddingRight": "1em",
+                "float": "left"
+            },
+            taskEl : {
+                "width": "30%",
+                "backgroundColor": "orange",
+                "borderBottom": "1px solid grey",
+                "marginBottom": "5px",
+                "color": "black",
+                "fontWeight": "bolder",
+                "padding": "5px"
+            },
+            taskUl : {
+                "padding": "0"
+            }
+    }
         return(
             <div>
             <h1>Lista zadań</h1>
-           <ul style={taskUl}>
+           <ul style={taskCSS.taskUl}>
             {/* Iteracja po obiekcie musimy używać Object.entries */}
                 {Object.entries(this.state.tasks).map(([key, value], index) =>
-                <li style={taskEl}><span style={taskCss}> {value} </span>{key} </li>
+                <li style={taskCSS.taskEl}><span style={taskCSS.taskSpan}> {value} </span>{key} </li>
         )}
             </ul>
             </div>
