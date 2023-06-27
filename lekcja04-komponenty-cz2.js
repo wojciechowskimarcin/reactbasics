@@ -33,7 +33,7 @@ const Footer = () => {
 
     return (
         <footer style={footerStyle}>
-
+            {/** Mapujemy po elementach tablicy - nie możemy użyć forEach ponieważ zwraca undefined **/}
      {links.map(elem => <a className='footerLink' href={elem.href}>{elem.text}</a>)}
         </footer>
     );
