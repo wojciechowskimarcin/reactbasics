@@ -21,13 +21,25 @@ class TaskList extends React.Component{
             "paddingRight": "1em",
             "float": "left"
         }
+        let taskEl = {
+            "width": "30%",
+            "backgroundColor": "orange",
+            "borderBottom": "1px solid grey",
+            "marginBottom": "5px",
+            "color": "black",
+            "fontWeight": "bolder",
+            "padding": "5px"
+        }
+        let taskUl = {
+            "padding": "0"
+        }
         return(
             <div>
             <h1>Lista zadań</h1>
-           <ul>
+           <ul style={taskUl}>
             {/* Iteracja po obiekcie musimy używać Object.entries */}
                 {Object.entries(this.state.tasks).map(([key, value], index) =>
-                <li><span style={taskCss}> {value} </span>{key} </li>
+                <li style={taskEl}><span style={taskCss}> {value} </span>{key} </li>
         )}
             </ul>
             </div>
@@ -39,8 +51,7 @@ class TaskList extends React.Component{
 class TaskEl extends React.Component{
     render(){
         return(
-            //this.props.taskList.map((task, index) => console.log({task}))
-           31
+           ""
         )
     }
 }
