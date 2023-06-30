@@ -6,7 +6,7 @@ class Application extends React.Component{
         this.state = {
             tekst: ""
         }
-        //bindujemy bo to nie jest funkcja strzałkowa tylko tradycyjna i w niej this jest "undefined"
+        //'bindujemy' bo to nie jest funkcja strzałkowa tylko tradycyjna i w niej this jest "undefined"
         this.handleResetBtn = this.handleResetBtn.bind(this);
     }
 
