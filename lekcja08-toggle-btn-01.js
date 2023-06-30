@@ -18,7 +18,7 @@ To jest tekst To jest tekst To jest tekst To jest tekst
 To jest tekst To jest tekst To jest tekst To jest tekst`;
 
 handleBtn(){
-    this.setState({
+    this.setState({ /* Przy wywołaniu setState() React odświeża widok */
     tglBtn: !this.state.tglBtn
     })
 }
