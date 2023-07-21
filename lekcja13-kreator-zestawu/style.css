@@ -35,7 +35,8 @@ ul > li:nth-child(even){
     background-color:#7f8b8b;
 }
 .selected:nth-child(even), .selected:nth-child(odd){
-    background-color:#04081b;
+    background-color: #252525;
+    background: linear-gradient(0deg, rgb(0,0,0) 0%, rgba(10,10,10, 0.95) 99%, rgba(57, 57, 57, 0.96) 100%);
     color:white
 }
 .prodDescription{
