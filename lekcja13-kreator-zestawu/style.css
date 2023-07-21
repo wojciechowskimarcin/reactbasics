@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
+body{
+    margin:0;
+    font-family: Raleway;
+    font-weight: 300;
+}
+header > h2 {
+    background-color: #FF4858;
+    margin:0;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    font-weight:900
+}
+header > p {
+    padding-left: 10px;
+
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+ul > li{
+padding:10px;
+color:white;
+cursor: pointer;
+}
+ul > li:nth-child(odd){
+    background-color: #747F7F;
+    
+}
+ul > li:nth-child(even){
+    background-color:#7f8b8b;
+}
+.selected:nth-child(even), .selected:nth-child(odd){
+    background-color:#04081b;
+    color:white
+}
+.prodDescription{
+    font-size: x-small
+}
+.app{
+    width:50%;
+    margin: 0 auto;
+    margin-top:40px
+}
