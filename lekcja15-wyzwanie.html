@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <style>
+        body, input, button{
+            font-family: "Raleway";
+            font-size: 1.3em;
+        }
+        body{
+            background-color: #A3AB78;
+        }
+        #root{
+            margin: 0 auto;
+            width: 50%;
+            margin-top:50px;
+        }
+        #currencySection{
+            width:30%;
+            margin:0 auto;
+            margin-top:50px;
+            background-color: #10454F;
+            color: white;
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 24px 0px rgb(0, 0, 0, .5);
+        }
+        .bolder{
+            font-weight: bolder;
+        }
+        .alert, .success{
+            padding:10px;
+            color:white
+        }
+        .alert{
+            background-color: red;
+        }
+        .success{
+            background-color: green;
+        }
+        #challengeNr{
+            background-color: white;
+            color: black;
+            padding:7px;
+            display:inline-block;
+            margin:0;
+            font-weight: 400;
+        }
+        #challengeContent{
+            background-color:#10454F;
+            color: white;
+            font-size: 2.1em;
+            font-style: italic;
+            padding:40px;
+            display:inline-table;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel"  src="lekcja15-wyzwanie.js"></script>
+</body>
+</html>
