@@ -144,9 +144,17 @@ class ShoppingList extends React.Component{
             console.log("cart:",cart)
            products.filter(pel => cart.filter(cel => pel.id === cel.id ? suma+=(cel.count*pel.price): ""))
             console.log("suma:",suma);
+            if(isNaN(suma)){
+                console.log("Not a number")
+                this.setState({
+                    sum: "Popraw wartość na liczbową",
+                    })
+            }
+            else{
             this.setState({
                 sum: suma.toFixed(2),
                 })
+            }
 
         }
 
