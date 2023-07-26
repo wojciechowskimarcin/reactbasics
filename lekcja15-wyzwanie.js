@@ -2,7 +2,7 @@ const challengeBase = [
     {id: 1, description: "Utwórz aplikację ToDoApp"},
     {id: 2, description: "Utwórz prostą apkę Array Filter"},
     {id: 3, description: "Utwórz licznik kliknięć"},
-    {id: 4, description: "Stwórz prostą apkę typu Accordion (hermonijka)"}, 
+    {id: 4, description: "Stwórz prostą apkę typu Accordion (harmonijka)"}, 
     {id: 5, description: "Stwórz prosty Image Slider"},
     {id: 6, description: "Stwórz w React aplikację Checklist"}
 ]
